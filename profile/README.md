@@ -1,4 +1,4 @@
-# <img src="./APP_IMG_V2.png" width="48" height="48" style="vertical-align: middle; margin-right: 10px;" /> NexusFi (넥서스파이)
+# <img src="./APP_IMG_V2.png" width="40" height="40" style="vertical-align: middle; margin-bottom: 8px; margin-right: 4px;" /> NexusFi (넥서스파이)
 > **"마이데이터 기술을 활용한 지능형 가계부 및 자산 관리 통합 대시보드 웹 애플리케이션"**
 
 ---
