@@ -32,34 +32,34 @@ NexusFi는 현대인의 복잡한 금융 생활을 하나로 연결하는 **마�
 ## 📊 프로젝트 기능 명세 구조도
 
 ```mermaid
-mindmap
-  root((NexusFi))
-    🔐 회원 인증
-      SSO 로그인
-        Google 연동
-        Kakao 연동
-      JWT 보안 인증
-        Access Token
-        Refresh Token
-    🏠 메인 홈
-      금융 보유 현황
-        도넛 그래프 시각화
-        계좌/카드/대출 집계
-      소비 요약 카드
-        이번 달 소비액
-        올해 누적 소비액
-    💰 자산 분석
-      포트폴리오 비율
-        은행별 비중 계산
-      세부 리스트
-        아코디언 뷰
-        통장 잔액 합산
-    📅 소비 현황
-      월간 캘린더
-        일자별 소비 금액
-      상세 내역
-        카테고리별 막대 그래프
-        타임라인형 리스트
+graph TD
+    Root[NexusFi] --> Auth[🔐 회원 인증]
+    Root --> Home[🏠 메인 홈]
+    Root --> Asset[💰 자산 분석]
+    Root --> Consumption[📅 소비 현황]
+
+    Auth --> SSO[SSO 로그인]
+    SSO --> Google[Google 연동]
+    SSO --> Kakao[Kakao 연동]
+    Auth --> JWT[JWT 보안 인증]
+    JWT --> AT[Access Token]
+    JWT --> RT[Refresh Token]
+
+    Home --> AssetStatus[금융 보유 현황]
+    AssetStatus --> Donut1[도넛 그래프 시각화]
+    Home --> Summary[소비 요약 카드]
+    Summary --> Monthly[이번 달/올해 소비액]
+
+    Asset --> Portfolio[포트폴리오 비율]
+    Portfolio --> Donut2[은행별 비중 계산]
+    Asset --> DetailList[은행별 세부 리스트]
+    DetailList --> Accordion[아코디언 뷰]
+
+    Consumption --> Calendar[월간 캘린더]
+    Calendar --> DailySum[일자별 지출 매핑]
+    Consumption --> DrillDown[일자별 상세 내역]
+    DrillDown --> BarChart[카테고리 분석]
+    DrillDown --> Timeline[타임라인 리스트]
 ```
 
 ---
